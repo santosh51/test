@@ -1,0 +1,28 @@
+git clone <projectURL> : Onetime change or setting
+
+
+project : main -- 102tests
+
+mainCopy_One  - 100tests... add--2tests  ==102test -- MergeReq
+
+git clone <<projectURL>>
+
+git checkout <<branchName>>
+	ex : git checkout master  // It swicthes to the mentioned branch
+	
+git checkout -b <<dummyBranchName>>
+	Ex : git checkout -b masterCopy  // It will create new branch and also swicthes to the mentioned branch
+	
+git pull origin <<branchName>>
+
+git status /// list down any files modified or addition or deletion that you did in project
+
+git add .  //Add all files that are modified.
+git add <<path>>*  // add all files under given path
+git add <FullPath> // Add file with exact path of file
+
+git commit -m "Added new file"
+
+git push origin head
+or git push origin <<dummyBranchName>>
+
