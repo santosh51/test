@@ -1,0 +1,48 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.io.*;
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		 // Creating instances of the array, vector and hashtable
+        int arr[] = new int[] { 1, 2, 3, 4 };
+        ArrayList arrList = new ArrayList<Integer>();
+         Set arrList = new HashSet<>();
+        // Adding the elements into the vector
+        arrList.add(242);
+        arrList.add(0,242);
+        arrList.add(123);
+        arrList.add(244);
+        arrList.add(125);
+        arrList.add(246);
+        System.out.println("Size of Array :"+arr.length);
+        System.out.println("Size of ArrayList :"+arrList.size());
+
+        for(int i=0;i<arrList.size();i++){
+            System.out.println(arrList.get(i));
+        }
+        arrList.remove(4);
+        System.out.println("Size of ArrayList after deletion :"+arrList.size());
+
+        // Accessing the first element of the array, vector and hashtable
+  int total=(int) arrList.get(0) + (int) arrList.get(4) ;
+        for(int i=0;i<arrList.size();i++){
+            total += (int) arrList.get(i);
+           // System.out.println(arrList.get(i));
+        }
+
+ System.out.println("Total of ArrayList values :"+total);
+         arrList.add(4,450);
+         System.out.println("Size of ArrayList after addition :"+arrList.size());
+         for(int i=0;i<arrList.size();i++){
+            System.out.println(arrList.get(i));
+        }
+	}
+}

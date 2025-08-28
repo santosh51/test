@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Main {
+  public Main(){
+     System.out.println("Default COnstrictor!");
+  }
+  public Main(int a){
+     System.out.println("one parameter!"+a);
+  }
+    public Main(String a){
+     System.out.println("one parameter!"+a);
+  }
+  public Main(int a, float b){
+     System.out.println("2 parameters "+(a+b));
+  }
+  public Main(int a, int b){
+     System.out.println("2 parameters "+(a+b));
+  }
+    public static void main(String[] args) {
+      System.out.println("Hello, World!");
+      Main m1=new Main();
+      Main m2=new Main(13);
+      Main m4=new Main("Test");
+      Main m3=new Main(54,98.74f);
+      Main m5=new Main(54,9);
+  }
+}
