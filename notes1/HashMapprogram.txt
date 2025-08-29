@@ -1,0 +1,54 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+// Class to Class     : HashMap<String, String> capitalCities = new HashMap<String, String>();
+// Interface to Class : Map<String, String> capitalCities = new HashMap<S    
+	public static void main(String[] args) {
+    // Create a HashMap object called capitalCities
+    Map<String, String> capitalCities = new LinkedHashMap<String, String>();
+    // Add keys and values (Country, City)
+    capitalCities.put("England", "London");
+    capitalCities.put("India", "New Dehli");
+    capitalCities.put("austria", "Wien");
+    capitalCities.put("1orway", "Oslo");
+    capitalCities.put("Norway", "1234Oslo"); // Duplicate
+    capitalCities.put("uSA", "Washington DC");
+    capitalCities.put("')SA", "Washington DC");
+    
+System.out.println("=============Key Set=============");
+for (String i : capitalCities.keySet()) {
+  System.out.println(i);
+}
+System.out.println("==========Values Set=============");
+// Print values
+for (String i : capitalCities.values()) {
+  System.out.println(i);
+}
+System.out.println("=============Key-Value Set=============");
+// Print keys and values
+for (String i : capitalCities.keySet()) {
+  System.out.println("key: " + i + " value: " + capitalCities.get(i));
+}
+
+Map<Integer,String> student = new HashMap<>();
+Scanner sc= new Scanner(System.in);
+String name;
+System.out.println("Enter Student details"); 
+for (int i=0;i<5;i++){
+    name = sc.next();
+    student.put(i,name);
+}
+System.out.println("Student details"); 
+for (Integer s : student.keySet()) {
+  System.out.println("key: " + (s+1) + " value: " + student.get(s));
+}
+   
+  }
+}
